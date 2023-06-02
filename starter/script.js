@@ -15,7 +15,7 @@ const btnHold = document.querySelector('.btn--hold');
 
 let scores, currentScore, activePlayer, playing;
 
-// Starting conditions
+// Starting conditions placed inside of a function expression
 
 const init = function () {
   scores = [0, 0];
@@ -87,4 +87,5 @@ btnHold.addEventListener('click', function () {
 });
 
 // Resetting the game
+
 btnNew.addEventListener('click', init);
